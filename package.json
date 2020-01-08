@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "dependencies": {
-    "ejs": "^3.0.1"
+    "ejs": "^3.0.1",
+    "mongoose": "^4.13.20"
   },
   "devDependencies": {},
   "scripts": {
