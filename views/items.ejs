@@ -2,7 +2,12 @@
 			<h2 style="background-color: tomato;">Items already in the mess include:</h2>
 			<ul>
 				<% menuItems.forEach(function(item){ %>
-					<li><h4><%=item.name%></h4><img style="width: 200px;" class="img-thumbnail" alt="<%=item.name%> image" src = "<%= item.image %>"></li>
+					<li>
+						<div class="img-thumbnail">
+							<img style="width: 200px;" alt="<%=item.name%> image" src = "<%= item.image %>">
+							<h4  class="caption"><%=item.name%></h4>
+						</div>
+					</li>
 				<% }); %>
 			</ul>
 
