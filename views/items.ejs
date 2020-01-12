@@ -2,15 +2,15 @@
 			<h2 style="background-color: tomato;">Items already in the mess include:</h2>
 			<ul>
 				<% menuItems.forEach(function(item){ %>
-					<li> <%= item %> </li>
+					<li><h4><%=item.name%></h4><img style="width: 200px;" class="img-thumbnail" alt="<%=item.name%> image" src = "<%= item.image %>"></li>
 				<% }); %>
 			</ul>
 
 			<strong>Add new Menu Item</strong>
 			<form class="form" action="/" method="POST">
 				<input type="text" name="item" placeholder="Name of the Item">
-				<input type="text" name="item" placeholder="Origin">
-				<input type="text" name="item" placeholder="Image">
+				<input type="text" name="origin" placeholder="Origin">
+				<input type="text" name="image" placeholder="Image">
 				<button class="btn btn-primary">Submit</button>
 			</form>
 

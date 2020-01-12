@@ -17,6 +17,7 @@ var menuSchema = new mongoose.Schema({
 
 var Item = mongoose.model("Item", menuSchema);
 
+/*
 Item.create({
 	name : "Chola Bhatura",
 	origin : "India",
@@ -32,7 +33,7 @@ Item.create({
 		else
 			console.log("Error occured while POSTing");
 	});
-
+*/
 app.get("/", function(req, res) {
 	// body...
 	console.log("GETing");

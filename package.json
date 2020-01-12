@@ -1,9 +1,10 @@
 {
-  "name": "newapp",
+  "name": "app.js",
   "version": "1.0.0",
   "main": "app.js",
   "dependencies": {
     "ejs": "^3.0.1",
+    "express": "^4.17.1",
     "mongoose": "^4.13.20"
   },
   "devDependencies": {},
@@ -12,5 +13,13 @@
   },
   "author": "Utkarsh Paliwal",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkarshpaliwal9/Food-Items-Web-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/utkarshpaliwal9/Food-Items-Web-App/issues"
+  },
+  "homepage": "https://github.com/utkarshpaliwal9/Food-Items-Web-App#readme",
   "description": ""
 }
