@@ -3,7 +3,7 @@ var parser = require("body-parser");
 var ejs = require("ejs");
 var mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:3000/menu_items", { useMongoClient : true});
+mongoose.connect("mongodb://127.0.0.1/menu_items", { useMongoClient : true});
 app.use(parser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
@@ -25,7 +25,10 @@ Item.create({
 	function(err, Item) {
 		// body...
 		if(!err)
+		{
 			console.log(Item);
+			console.log("CB inserted");
+		}
 		else
 			console.log("Error occured while POSTing");
 	});
